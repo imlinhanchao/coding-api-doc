@@ -1,0 +1,30 @@
+{
+    "book": "Coding API 文档",
+    "author": "Hancel.Lin",
+    "description": "Coding 企业版 API 文档",
+    "language": "zh-hans",
+    "direction": "ltr",
+    "gitbook": "3.2.3",
+    "root": ".",
+    "plugins": [
+        "github"
+    ],
+    "pluginsConfig": {
+        "github": {
+          "url": "https://github.com/imlinhanchao/coding-api-doc"
+        },
+        "fontSettings": {
+            "theme": "white",
+            "family": "serif",
+            "size": 2
+        },
+        "duoshuo": {
+            "short_name": "wiznote",
+            "theme": "default"
+        }
+    },
+    "introduction": {
+        "path": "README.md",
+        "title": "Coding API 文档"
+    }
+}
