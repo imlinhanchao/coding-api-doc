@@ -9,6 +9,7 @@
     * [用户活跃度](user/active.md)
 * [项目](project/readme.md)
     * [项目列表](project/list.md)
+    * [创建项目](project/create.md)
     * [项目信息](project/info.md)
     * [项目成员](project/member.md)
     * [项目动态](project/active.md)
