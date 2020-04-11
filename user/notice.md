@@ -8,7 +8,7 @@ Request:
 GET /api/notification?page=1&pageSize=10&order=1
 ```
 
-|Key|Description|
+|键|说明|
 |--|--|
 |page|第几页|
 |pageSize|每页个数|
@@ -38,3 +38,16 @@ Response:
     }
 }
 ```
+
+|键|说明|
+|--|--|
+|reminded|是否提醒(目前没有发现为 true 的消息触发方式)|
+|owner_id|消息所有者 Id|
+|target_type|消息目标类型|
+|created_at|创建时间|
+|project|项目信息，若 target_type 为 `project` 时存在此字段|
+|target_id|消息目标 ID。若是项目，则为项目 ID|
+|id|消息 ID|
+|type|消息类型，目前发现项目相关为 4， 公告更新为 0，更多待补充|
+|content|消息内容|
+|status|消息状态，0: 未读，1: 已读|
