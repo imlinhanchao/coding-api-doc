@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>项目成员 · GitBook</title>
+        <title>更新项目 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="active.html" />
+    <link rel="next" href="member.html" />
     
     
-    <link rel="prev" href="update.html" />
+    <link rel="prev" href="create.html" />
     
 
     </head>
@@ -258,7 +258,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="update.html">
+        <li class="chapter active" data-level="1.4.4" data-path="update.html">
             
                 <a href="update.html">
             
@@ -271,7 +271,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.5" data-path="member.html">
+        <li class="chapter " data-level="1.4.5" data-path="member.html">
             
                 <a href="member.html">
             
@@ -345,7 +345,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >项目成员</a>
+        <a href=".." >更新项目</a>
     </h1>
 </div>
 
@@ -360,69 +360,18 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x9879;&#x76EE;&#x6210;&#x5458;">&#x9879;&#x76EE;&#x6210;&#x5458;</h1>
-<p>&#x9879;&#x76EE;&#x6210;&#x5458;&#x76F8;&#x5173;&#x63A5;&#x53E3;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E; <code>project</code> &#x7684; scope &#x6388;&#x6743;&#x3002;</p>
-<h2 id="&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x6210;&#x5458;">&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x6210;&#x5458;</h2>
-<p>&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x7684;&#x53C2;&#x4E0E;&#x6210;&#x5458;&#x5217;&#x8868;&#xFF0C;&#x9700;&#x8981;&#x9879;&#x76EE; Id <code>project_id</code>&#x3002;</p>
+                                <h1 id="&#x66F4;&#x65B0;&#x9879;&#x76EE;">&#x66F4;&#x65B0;&#x9879;&#x76EE;</h1>
+<p>&#x66F4;&#x65B0;&#x9879;&#x76EE;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E0D;&#x9700;&#x8981;&#x4EFB;&#x4F55; scope &#x6388;&#x6743;&#x3002;</p>
 <p>Request:</p>
-<pre><code>GET /api/project/:project_id/members?page=1&amp;pageSize=200
+<pre><code>PUT /api/project
+
+id=7763347&amp;
+name=new_name&amp;
+description=&#x65B0;&#x7684;&#x63CF;&#x8FF0;&amp;
+startDate=2020-04-01&amp;
+endDate=2020-04-02&amp;
+displayName=&#x65B0;&#x7684;&#x540D;&#x8BCD;&amp;
 </code></pre><table>
-<thead>
-<tr>
-<th>&#x952E;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>project_id</td>
-<td>&#x9879;&#x76EE; Id</td>
-</tr>
-<tr>
-<td>page</td>
-<td>&#x7B2C;&#x51E0;&#x9875;</td>
-</tr>
-<tr>
-<td>pageSize</td>
-<td>&#x6BCF;&#x9875;&#x4E2A;&#x6570;</td>
-</tr>
-</tbody>
-</table>
-<p>Response:</p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-string">&quot;data&quot;</span>: {
-        <span class="hljs-string">&quot;list&quot;</span>: [{
-            <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">10929327</span>,
-            <span class="hljs-string">&quot;project_id&quot;</span>: <span class="hljs-number">7763347</span>,
-            <span class="hljs-string">&quot;user_id&quot;</span>: <span class="hljs-number">2492081</span>,
-            <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-number">90</span>,
-            <span class="hljs-string">&quot;alias&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-            <span class="hljs-string">&quot;team_alias&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-            <span class="hljs-string">&quot;created_at&quot;</span>: <span class="hljs-number">1586586477000</span>,
-            <span class="hljs-string">&quot;last_visit_at&quot;</span>: <span class="hljs-number">1586592518000</span>,
-            <span class="hljs-string">&quot;user&quot;</span>: {
-                <span class="hljs-comment">// &#x7528;&#x6237;&#x4E2A;&#x4EBA;&#x4FE1;&#x606F;</span>
-            },
-            <span class="hljs-string">&quot;roles&quot;</span>: [{
-                <span class="hljs-string">&quot;roleId&quot;</span>: <span class="hljs-number">57806545</span>,
-                <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;&#x9879;&#x76EE;&#x7BA1;&#x7406;&#x5458;&quot;</span>,
-                <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-                <span class="hljs-string">&quot;roleType&quot;</span>: <span class="hljs-string">&quot;ProjectAdmin&quot;</span>,
-                <span class="hljs-string">&quot;isRoleCanEdit&quot;</span>: <span class="hljs-literal">false</span>,
-                <span class="hljs-string">&quot;isRoleCanDelete&quot;</span>: <span class="hljs-literal">false</span>,
-                <span class="hljs-string">&quot;isPermissionCanEdit&quot;</span>: <span class="hljs-literal">false</span>,
-                <span class="hljs-string">&quot;createdAt&quot;</span>: <span class="hljs-number">1586586477000</span>
-            }]
-        }],
-        <span class="hljs-string">&quot;page&quot;</span>: <span class="hljs-number">1</span>,
-        <span class="hljs-string">&quot;pageSize&quot;</span>: <span class="hljs-number">200</span>,
-        <span class="hljs-string">&quot;totalPage&quot;</span>: <span class="hljs-number">1</span>,
-        <span class="hljs-string">&quot;totalRow&quot;</span>: <span class="hljs-number">1</span>
-    }
-}
-</code></pre>
-<table>
 <thead>
 <tr>
 <th>&#x952E;&#x503C;</th>
@@ -431,154 +380,85 @@
 </thead>
 <tbody>
 <tr>
-<td>list</td>
-<td>&#x9879;&#x76EE;&#x5217;&#x8868;</td>
-</tr>
-<tr>
-<td>- id</td>
-<td>&#x6210;&#x5458; Id</td>
-</tr>
-<tr>
-<td>- project_id</td>
+<td>id</td>
 <td>&#x9879;&#x76EE; Id</td>
 </tr>
 <tr>
-<td>- type</td>
-<td>#Unknown</td>
+<td>name</td>
+<td>&#x9879;&#x76EE;&#x540D;</td>
 </tr>
 <tr>
-<td>- alias</td>
-<td>&#x522B;&#x540D;</td>
+<td>description</td>
+<td>&#x63CF;&#x8FF0;</td>
 </tr>
 <tr>
-<td>- team_alias</td>
-<td>&#x56E2;&#x961F;&#x522B;&#x540D;</td>
+<td>startDate</td>
+<td>&#x9879;&#x76EE;&#x65F6;&#x95F4;&#x59CB;</td>
 </tr>
 <tr>
-<td>- created_at</td>
-<td>&#x6DFB;&#x52A0;&#x65E5;&#x671F;</td>
+<td>endDate</td>
+<td>&#x9879;&#x76EE;&#x65F6;&#x95F4;&#x7EC8;</td>
 </tr>
 <tr>
-<td>- last_visit_at</td>
-<td>&#x6700;&#x540E;&#x8BBF;&#x95EE;&#x65E5;&#x671F;</td>
-</tr>
-<tr>
-<td>- user</td>
-<td>&#x7528;&#x6237;&#x4FE1;&#x606F;</td>
-</tr>
-<tr>
-<td>- roles</td>
-<td>&#x7528;&#x6237;&#x89D2;&#x8272;</td>
-</tr>
-<tr>
-<td>- - roleId</td>
-<td>&#x89D2;&#x8272; Id</td>
-</tr>
-<tr>
-<td>- - name</td>
-<td>&#x89D2;&#x8272;&#x540D;&#x79F0;</td>
-</tr>
-<tr>
-<td>- - description</td>
-<td>&#x89D2;&#x8272;&#x63CF;&#x8FF0;</td>
-</tr>
-<tr>
-<td>- - roleType</td>
-<td>&#x89D2;&#x8272;&#x7C7B;&#x578B;</td>
-</tr>
-<tr>
-<td>- - isRoleCanEdit</td>
-<td>&#x89D2;&#x8272;&#x662F;&#x5426;&#x53EF;&#x7F16;&#x8F91;</td>
-</tr>
-<tr>
-<td>- - isRoleCanDelete</td>
-<td>&#x89D2;&#x8272;&#x662F;&#x5426;&#x53EF;&#x5220;&#x9664;</td>
-</tr>
-<tr>
-<td>- - isPermissionCanEdit</td>
-<td>&#x6743;&#x9650;&#x662F;&#x5426;&#x53EF;&#x7F16;&#x8F91;</td>
-</tr>
-<tr>
-<td>- - createdAt</td>
-<td>&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
-</tr>
-<tr>
-<td>page</td>
-<td>&#x9875;&#x7801;</td>
-</tr>
-<tr>
-<td>pageSize</td>
-<td>&#x6BCF;&#x9875;&#x4E2A;&#x6570;</td>
-</tr>
-<tr>
-<td>totalPage</td>
-<td>&#x9875;&#x6570;&#x603B;&#x548C;</td>
-</tr>
-<tr>
-<td>totalRow</td>
-<td>&#x603B;&#x6761;&#x76EE;&#x6570;</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x6DFB;&#x52A0;&#x6210;&#x5458;">&#x6DFB;&#x52A0;&#x6210;&#x5458;</h2>
-<p>&#x6DFB;&#x52A0;&#x9879;&#x76EE;&#x6210;&#x5458;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x6210;&#x5458;&#x7684;&#x7528;&#x6237;&#x540D;&#x3002;&#x6DFB;&#x52A0;&#x540E;&#x9ED8;&#x8BA4;&#x4E3A;<strong>&#x5F00;&#x53D1;</strong>&#x89D2;&#x8272;&#x3002;&#x9700;&#x8981;&#x8BBE;&#x7F6E; <code>project:members</code> &#x7684; scope &#x6388;&#x6743;&#x3002;</p>
-<p>Request:</p>
-<pre><code>POST /api/project/:project_id/members/gk/add
-
-users=username
-</code></pre><table>
-<thead>
-<tr>
-<th>&#x952E;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>project_id</td>
-<td>&#x9879;&#x76EE; Id</td>
-</tr>
-<tr>
-<td>users</td>
-<td>&#x7528;&#x6237;&#x540D;</td>
+<td>displayName</td>
+<td>&#x9879;&#x76EE;&#x663E;&#x793A;&#x540D;</td>
 </tr>
 </tbody>
 </table>
 <p>Response:</p>
 <pre><code class="lang-json">{
     <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>,
-    <span class="hljs-string">&quot;data&quot;</span>: <span class="hljs-number">1</span>
+    <span class="hljs-string">&quot;data&quot;</span>: {
+        <span class="hljs-string">&quot;created_at&quot;</span>: <span class="hljs-number">1586586477000</span>,
+        <span class="hljs-string">&quot;backend_project_path&quot;</span>: <span class="hljs-string">&quot;/team/imlinhanchao/project/test&quot;</span>,
+        <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+        <span class="hljs-string">&quot;git_url&quot;</span>: <span class="hljs-string">&quot;git@e.coding.net:imlinhanchao/test.git&quot;</span>,
+        <span class="hljs-string">&quot;ssh_url&quot;</span>: <span class="hljs-string">&quot;git@e.coding.net:imlinhanchao/test.git&quot;</span>,
+        <span class="hljs-string">&quot;svn_url&quot;</span>: <span class="hljs-string">&quot;svn+ssh://svn@svn.e.coding.net/imlinhanchao/test&quot;</span>,
+        <span class="hljs-string">&quot;is_public&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;https_url&quot;</span>: <span class="hljs-string">&quot;https://e.coding.net/imlinhanchao/test.git&quot;</span>,
+        <span class="hljs-string">&quot;vcs_type&quot;</span>: <span class="hljs-string">&quot;git&quot;</span>,
+        <span class="hljs-string">&quot;subversion_url&quot;</span>: <span class="hljs-string">&quot;svn.e.coding.net/imlinhanchao/test&quot;</span>,
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-number">7763347</span>,
+        <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;test&quot;</span>,
+        <span class="hljs-string">&quot;name_pinyin&quot;</span>: <span class="hljs-string">&quot;cs|csh|ceshi&quot;</span>,
+        <span class="hljs-string">&quot;display_name&quot;</span>: <span class="hljs-string">&quot;&#x6D4B;&#x8BD5;&quot;</span>,
+        <span class="hljs-string">&quot;owner_id&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;owner_user_name&quot;</span>: <span class="hljs-string">&quot;imlinhanchao&quot;</span>,
+        <span class="hljs-string">&quot;owner_user_picture&quot;</span>: <span class="hljs-string">&quot;https://dn-coding-net-production-static.codehub.cn/cc500da5-4b86-4cd2-8d6c-9d375a7ffcd8.jpg?imageMogr2/auto-orient/format/jpeg/crop/!458x458a0a0&quot;</span>,
+        <span class="hljs-string">&quot;owner_user_home&quot;</span>: <span class="hljs-string">&quot;&lt;a href=\&quot;https://imlinhanchao.coding.net/u/SnlleiNbUS\&quot;&gt;SnlleiNbUS&lt;/a&gt;&quot;</span>,
+        <span class="hljs-string">&quot;project_path&quot;</span>: <span class="hljs-string">&quot;/p/test&quot;</span>,
+        <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">&quot;updated_at&quot;</span>: <span class="hljs-number">1586620794000</span>,
+        <span class="hljs-string">&quot;last_updated&quot;</span>: <span class="hljs-number">1586620794000</span>,
+        <span class="hljs-string">&quot;fork_count&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;star_count&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;watch_count&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;pin&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;depot_path&quot;</span>: <span class="hljs-string">&quot;/p/test/d/test/git&quot;</span>,
+        <span class="hljs-string">&quot;forked&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;un_read_activities_count&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;icon&quot;</span>: <span class="hljs-string">&quot;/static/project_icon/scenery-version-2-10.svg&quot;</span>,
+        <span class="hljs-string">&quot;current_user_role_id&quot;</span>: <span class="hljs-number">90</span>,
+        <span class="hljs-string">&quot;current_user_role&quot;</span>: <span class="hljs-string">&quot;admin&quot;</span>,
+        <span class="hljs-string">&quot;stared&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;watched&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;recommended&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;shared&quot;</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">&quot;is_member&quot;</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">&quot;max_member&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;groupId&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;plan&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;isTeam&quot;</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">&quot;archived&quot;</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-string">&quot;taskHide&quot;</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-string">&quot;default_depot_name&quot;</span>: <span class="hljs-string">&quot;test&quot;</span>,
+        <span class="hljs-string">&quot;agile_feature_initialized&quot;</span>: <span class="hljs-literal">true</span>
+    }
 }
 </code></pre>
-<h2 id="&#x79FB;&#x9664;&#x6210;&#x5458;">&#x79FB;&#x9664;&#x6210;&#x5458;</h2>
-<p>&#x5C06;&#x6210;&#x5458;&#x4ECE;&#x9879;&#x76EE;&#x79FB;&#x9664;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E; <code>project:members</code> &#x7684; scope &#x6388;&#x6743;&#x3002;</p>
-<p>Request:</p>
-<pre><code>POST /api/project/:project_id/kickout/:member_id
-
-users=username
-</code></pre><table>
-<thead>
-<tr>
-<th>&#x952E;</th>
-<th>&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>project_id</td>
-<td>&#x9879;&#x76EE; Id</td>
-</tr>
-<tr>
-<td>member_id</td>
-<td>&#x6210;&#x5458; Id&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6210;&#x5458;&#x5217;&#x8868;&#x4E2D;&#x83B7;&#x5F97;&#x7684; Id</td>
-</tr>
-</tbody>
-</table>
-<p>Response:</p>
-<pre><code class="lang-json">{
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-number">0</span>
-}
-</code></pre>
+<p>&#x5B57;&#x6BB5;&#x63CF;&#x8FF0;&#x89C1;<a href="info.html">&#x9879;&#x76EE;&#x4FE1;&#x606F;</a></p>
 
                                 
                                 </section>
@@ -606,12 +486,12 @@ users=username
 
             
                 
-                <a href="update.html" class="navigation navigation-prev " aria-label="Previous page: 更新项目">
+                <a href="create.html" class="navigation navigation-prev " aria-label="Previous page: 创建项目">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="active.html" class="navigation navigation-next " aria-label="Next page: 项目动态">
+                <a href="member.html" class="navigation navigation-next " aria-label="Next page: 项目成员">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -622,7 +502,7 @@ users=username
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"项目成员","level":"1.4.5","depth":2,"next":{"title":"项目动态","level":"1.4.6","depth":2,"path":"project/active.md","ref":"project/active.md","articles":[]},"previous":{"title":"更新项目","level":"1.4.4","depth":2,"path":"project/update.md","ref":"project/update.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/imlinhanchao/coding-api-doc"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"wiznote","theme":"default"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"white","family":"serif","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","book":"Coding API 文档","author":"Hancel.Lin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","introduction":{"path":"README.md","title":"Coding API 文档"},"gitbook":"3.2.3","description":"Coding 企业版 API 文档","direction":"ltr"},"file":{"path":"project/member.md","mtime":"2020-04-11T12:20:39.313Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-11T16:07:04.966Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"更新项目","level":"1.4.4","depth":2,"next":{"title":"项目成员","level":"1.4.5","depth":2,"path":"project/member.md","ref":"project/member.md","articles":[]},"previous":{"title":"创建项目","level":"1.4.3","depth":2,"path":"project/create.md","ref":"project/create.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/imlinhanchao/coding-api-doc"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"wiznote","theme":"default"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"white","family":"serif","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","book":"Coding API 文档","author":"Hancel.Lin","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","introduction":{"path":"README.md","title":"Coding API 文档"},"gitbook":"3.2.3","description":"Coding 企业版 API 文档","direction":"ltr"},"file":{"path":"project/update.md","mtime":"2020-04-11T16:05:12.089Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-11T16:07:04.966Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
