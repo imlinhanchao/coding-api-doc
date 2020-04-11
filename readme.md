@@ -16,4 +16,10 @@
     * [项目信息](project/info.md)
     * [项目成员](project/member.md)
     * [项目动态](project/active.md)
+* 仓库
+* 协同
+* 文档
+* 测试
+* 构建
+* 制品库
 * [错误代码](error.md)
