@@ -1,5 +1,6 @@
 # 用户信息
 
+## 当前登录用户
 获取当前用户，这是当前 token 的授权用户。你需要设置 `user` 的 scope。
 
 Request:
@@ -8,6 +9,7 @@ Request:
 GET /api/account/current_user
 ```
 
+## 团队成员
 我们也可以获取团队成员的个人信息，但是很神奇的是，这个你不需要开启任何权限。你只需要知道他们的 `username` ，需要注意的是，团队内的用户名是随机生成的。唯一可以获取团队成员用户名的接口，是[获取项目成员](../project/member.md)。
 
 Request:
@@ -91,6 +93,7 @@ Response:
 |email_validation|邮箱是否验证|
 |account_type|#Unknown|
 
+## 登录用户邮箱
 另外，还有一个专门只获取用户邮箱的 API，你需要设置 `user:email` 的 scope 授权。
 
 Request:

@@ -1,5 +1,6 @@
-# 用户通知
+# 用户消息
 
+## 获取消息
 获取用户的通知列表，可以支持分页查询。需要设置 `notification` 的 scope 授权。
 
 Request:
@@ -51,3 +52,43 @@ Response:
 |type|消息类型，目前发现项目相关为 4， 公告更新为 0，更多待补充|
 |content|消息内容|
 |status|消息状态，0: 未读，1: 已读|
+
+## 标记已读
+
+标记未读消息已读，支持批量标记已读。需要设置 `notification` 的 scope 授权。
+
+Request:
+
+```
+POST /api/notification/mark-read
+
+id=消息Id_1&id=消息Id_2
+```
+
+Response:
+```json
+{
+    "code": 0,
+    "data": true // true = 标记成功，false = 标记失败(可能 Id 不存在)
+}
+```
+
+## 全部标记已读
+
+标记所有未读消息已读，请求地址与标记一致。需要设置 `notification` 的 scope 授权。
+
+Request:
+
+```
+POST /api/notification/mark-read
+
+all=true
+```
+
+Response:
+```json
+{
+    "code": 0,
+    "data": true // true = 标记成功，false = 标记失败
+}
+```
