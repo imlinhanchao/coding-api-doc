@@ -18,6 +18,9 @@ Request:
 ```
 GET /api/account/key/:username
 ```
+|键|说明|
+|--|--|
+|username|用户名|
 
 这两个接口 Response 的内容都是一样的。
 
