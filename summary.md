@@ -11,4 +11,5 @@
     * [项目列表](project/list.md)
     * [项目信息](project/info.md)
     * [项目成员](project/member.md)
+    * [项目动态](project/active.md)
 * [错误代码](error.md)
