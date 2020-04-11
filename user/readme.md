@@ -2,6 +2,6 @@
 
 你可以通过这里的接口获取登录用户的相关信息，比如昵称，邮箱，消息等等。
 
-* [用户信息](user/info.md)
-* [用户消息](user/notice.md)
-* [用户活跃度](user/active.md)
+* [用户信息](info.md)
+* [用户消息](notice.md)
+* [用户活跃度](active.md)
