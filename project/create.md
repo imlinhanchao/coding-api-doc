@@ -29,7 +29,7 @@ type=2
 |gitEnabled|是否启用 Git 初始化，true=启用，false=不启用|
 |gitReadmeEnabled|是否添加 Readme，若为 true，gitEnabled 必须为 true 才能生效|
 |gitLicense|是否添加 License，若为 true，gitEnabled 必须为 true 才能生效|
-|gitIgnore|是否添加 gitignore，若不为 no，gitReadmeEnabled 必须为 true 才能生效。若要添加，则写上对应 gitignore 文件名称即可|
+|gitIgnore|是否添加 gitignore，若不为 no，true，gitEnabled 必须为 true 才能生效。若要添加，则写上对应 gitignore 文件名称即可|
 |shared|是否共享源代码|
 |type|写 2 就对了，不知道什么含义|
 
