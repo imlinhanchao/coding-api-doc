@@ -21,6 +21,7 @@ type=2
 
 |键值|说明|
 |--|--|
+|team_name|团队域名|
 |name|项目名|
 |displayName|项目显示名|
 |description|描述|
