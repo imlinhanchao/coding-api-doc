@@ -8,7 +8,11 @@
 
 访问[这里](https://help.coding.net/docs/project/open/oauth.html)可以看到详细的认证流程。
 
-完成认证后可以拿到用户的 `access_token` 。在访问 API 时，只需要在地址后加上 Query String `access_token=your_token` 即可。
+完成认证后可以拿到用户的 `access_token` 。在访问 API 时，只需要在地址后加上 Query String `access_token=your_token` 即可。例如：
+
+```
+https://team_name.coding.net/api/account/current_user?access_token=05acb701b20848928dfdaad85ff5588c
+```
 
 另外，`access_token`是有时效性的，大概会在几个小时后过期。一旦过期，就需要使用 `refresh_token` 来刷新 `access_token`。访问如下地址即可：
 
