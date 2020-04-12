@@ -26,7 +26,7 @@ Response(Git):
             "parent_id": 0,
             "project_id": 7763581,
             "root_id": 7796833,
-            "path": "imlinhanchao/coding-demo",
+            "path": "team_name/coding-demo",
             "origin_url": "",
             "created_at": 1586592635000,
             "default_branch": "master",
@@ -54,9 +54,9 @@ Response(Git):
             "branchCount": 2,
             "tagCount": 1,
             "size": 240,
-            "gitHttpsUrl": "https://e.coding.net/imlinhanchao/coding-demo.git",
-            "gitWebUrl": "https://imlinhanchao.coding.net/p/coding-demo/d/coding-demo",
-            "gitSshUrl": "git@e.coding.net:imlinhanchao/coding-demo.git",
+            "gitHttpsUrl": "https://e.coding.net/team_name/coding-demo.git",
+            "gitWebUrl": "https://team_name.coding.net/p/coding-demo/d/coding-demo",
+            "gitSshUrl": "git@e.coding.net:team_name/coding-demo.git",
             "shared": false,
             "gitHttpsHost": "https://e.coding.net",
             "gitSshHost": "git@e.coding.net"
@@ -105,7 +105,7 @@ Response(Svn):
             "name": "svn_demo",
             "size": 0,
             "actual_depot_name": "svn_demo",
-            "path": "imlinhanchao/svn_demo",
+            "path": "team_name/svn_demo",
             "origin_url": "",
             "created_at": 1586592861000,
             "depot_path": "/p/svn_demo/d/svn_demo/svn",
@@ -114,10 +114,10 @@ Response(Svn):
             "isSvnHttp": false,
             "shared": false,
             "svn_enabled": true,
-            "svnHttpsUrl": "https://e-svn.coding.net/imlinhanchao/svn_demo/svn_demo",
-            "svnWebUrl": "https://imlinhanchao.coding.net/p/svn_demo/d/svn_demo",
-            "svnSshUrl": "svn+ssh://subversion.e.coding.net/imlinhanchao/svn_demo",
-            "svnUrl": "svn://subversion.e.coding.net/imlinhanchao/svn_demo",
+            "svnHttpsUrl": "https://e-svn.coding.net/team_name/svn_demo/svn_demo",
+            "svnWebUrl": "https://team_name.coding.net/p/svn_demo/d/svn_demo",
+            "svnSshUrl": "svn+ssh://subversion.e.coding.net/team_name/svn_demo",
+            "svnUrl": "svn://subversion.e.coding.net/team_name/svn_demo",
             "svnHost": "svn://subversion.e.coding.net",
             "svnSshHost": "svn+ssh://subversion.e.coding.net"
         }
@@ -129,6 +129,7 @@ Response(Svn):
 |--|--|
 |id|仓库 Id|
 |name|仓库名|
+|size|仓库大小，单位为 KB|
 |actual_depot_name|目前看与仓库名值一致|
 |origin_url|#Unknown|
 |created_at|创建时间|

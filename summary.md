@@ -16,5 +16,6 @@
     * [项目成员](project/member.md)
     * [项目动态](project/active.md)
 * [仓库](repository/readme.md)
+    * [仓库列表](repository/list.md)
     * [仓库信息](repository/info.md)
 * [错误代码](error.md)
