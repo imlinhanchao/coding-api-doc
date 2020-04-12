@@ -16,6 +16,7 @@
     * [项目信息](project/info.md)
     * [创建项目](project/create.md)
     * [更新项目](project/update.md)
+    * [移除项目](project/delete.md)
     * [项目成员](project/member.md)
     * [项目动态](project/active.md)
 * 仓库

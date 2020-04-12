@@ -6,5 +6,6 @@
 * [项目信息](info.md)
 * [创建项目](create.md)
 * [更新项目](update.md)
+* [移除项目](delete.md)
 * [项目成员](member.md)
 * [项目动态](active.md)
