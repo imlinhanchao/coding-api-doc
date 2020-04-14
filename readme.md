@@ -22,6 +22,7 @@
 * [仓库](repository/readme.md)
     * [仓库列表](repository/list.md)
     * [仓库信息](repository/info.md)
+    * [创建文件](repository/create.md)
 * WebHook
 * 协同
 * 文档

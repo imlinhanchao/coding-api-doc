@@ -18,4 +18,5 @@
 * [仓库](repository/readme.md)
     * [仓库列表](repository/list.md)
     * [仓库信息](repository/info.md)
+    * [创建文件](repository/create.md)
 * [错误代码](error.md)
