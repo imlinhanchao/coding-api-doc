@@ -7,6 +7,7 @@
 |905|network_connection_error|网络连接异常，请重试||
 |1100|project_not_exists|项目不存在|传递了错误的项目 Id 进行项目的修改|
 |1161|project_display_name_exists|项目名称已经存在，请重新填写项目名称|创建同名项目|
+|1216|is_not_in_head|拒绝提交，不在最新版本，请自行保留修改|创建/上传代码到仓库传递的lastCommitSha不是最新的|
 |1217|file_exists|文件已存在|在仓库新建已经存在的文件|
 |1222|branch_or_tag_exist|分支或者标签已经存在|创建了已存在的分支|
 |1400|permission_denied|无权访问，请联系团队管理员为您设置权限|没有传递 Token|
